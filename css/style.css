@@ -1,0 +1,371 @@
+/* 컨테이너 */
+
+.container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    /* background: rgba(0,0,0,0.4); */
+    padding: 0 28px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+/* 모바일 */
+#m-nav{
+    display: none;
+    position: absolute;
+    top: 10px; right: 14px;
+
+}
+.m_nav_icon {
+    display: block;
+    width: 25px;
+    height: 10px;
+    padding:15px 10px 10px 10px;
+}
+
+.m_nav_icon span {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 4px;
+    background: #39106a;
+    border-radius: 30px;
+}
+.m_nav_icon span::before,
+.m_nav_icon span::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 25px;
+    height: 4px;
+    background: #39106a;
+    border-radius: 30px;
+
+}
+
+.m_nav_icon span::before {
+    bottom: -7px;
+}
+.m_nav_icon span::after {
+    top: -7px;
+}
+
+/* 헤더 */
+header {
+    border-bottom: 1px solid #c6c6c6;  
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.header h1 .logo{
+    width: 155px;
+    padding: 15px 8px 3px 0;
+    display: inline-block;
+}
+.header h1 .logo_sub {
+    width: 126px;
+    display: block;
+    position: absolute;
+    left: 194px;
+    top: 23px;
+    
+}
+
+
+/* 헤더 네비 */
+.nav_menu {
+    display: flex;
+    border-left: 1px solid #c6c6c6;
+}
+
+.nav_menu li {
+    width: 103px;
+    text-align: center;
+    border-right: 1px solid #c6c6c6;
+}
+.nav_menu li a {
+    display: block;
+    padding: 19px 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #444;
+}
+
+
+/* 배너*/
+#banner {
+    position: relative;
+}
+
+/* 배너 메뉴 */
+
+#banner_menu {
+    position: absolute;
+    top: 20px; left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+}
+.banner_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.banner_menu a{
+    color: aliceblue;
+    font-size: 1rem;
+    transition: all .3s;
+}
+.banner_menu a:hover {
+    color: #c1c1c1;
+}
+.banner_menu ul {
+    display: flex;
+    align-items: center;
+}
+.bm_right {
+    display: flex;
+}
+
+.banner_menu li {
+    margin-right: 2em;
+    position: relative;
+}
+.banner_menu li.menu_btn {
+    margin-right: 20px;
+}
+
+.banner_menu li.button_w {
+    margin-right: 10px;
+}
+.banner_menu li.button_p {
+    margin-right: 0;
+}
+
+
+/* 배너 슬라이드 */
+
+.banner_slide {
+    width: 100%;
+    height: 500px;
+}
+
+.slide_img1{
+    background: url(../img/swiper01.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.slide_img2{
+    background: url(../img/main_slider03_2000.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.slide_img3{
+    background: url(../img/main_slider02_2000.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.slide_img4{
+    background: url(../img/main_slider03_2000.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.slide_container {
+    margin-left: 100px;
+}
+
+.swiper-slide h2 {
+    font-size: 60px;
+    color: aliceblue;
+    margin-top: 150px;
+    line-height: 1em;
+    position: relative;
+    display: inline-block;
+}
+.swiper-slide h2::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,.3);
+    position: absolute;
+    bottom: -30%; left: 0;
+
+}
+.swiper-slide em {
+    display: block;
+    font-weight: 100;
+}
+
+.swiper-slide p {
+    font-size: 27px;
+    color: aliceblue;
+    padding-top: 50px;
+}
+
+.movie {
+    padding: 100px 0;
+}
+.movie_menu {
+    margin-bottom: 60px;
+}
+.movie_menu ul {
+    display: flex;
+    width: 848px;
+    margin: 0 auto;
+}
+
+.movie_menu li {
+    width: 210px;
+    text-align: center;
+    border: 1px solid #c4c4c4;
+    margin-left: -1px;
+}
+
+.movie_menu li.active a {
+    background: #666;
+    color: #fff;
+}
+.movie_menu li a {
+    display: block;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #666;
+}
+
+.chart {
+    display: flex;
+    margin-bottom: 30px;
+ }
+.card_grid {
+    position: relative;
+    margin: 0 .5em;
+}
+.movie_poster img {
+    display: block;
+}
+
+.rank {
+    position: absolute;
+    top: 17px; left: 0;
+    width: 50px; height: 50px;
+    line-height: 50px;
+    background: #38116a;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    box-shadow: 3px 3px 8px rgba(0,0,0,.5);
+}
+
+.rank strong {
+    text-shadow: 1px 1px 3px rgba(0,0,0,.1);
+}
+
+.mx {
+    position: absolute;
+    top: 17px; right: 17px;
+}
+
+.card_contents {
+    background: #fff;
+    padding: 17px;
+    border: 1px solid #d9d9d9;
+
+}
+.card_contents h3 {
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card_contents h3 span {
+    width: 29px; height: 29px;
+    display: inline-block;
+    margin-top: 9px;
+    vertical-align: -2px;
+}
+/* mx 아이콘 */
+.mx span {
+    width: 103px; height: 25px; 
+    display: block;
+}
+.m {
+    background-position: 0px -75px;
+}
+.b {
+    background-position: 0px -100px;
+}
+
+/* 관람 연령 아이콘 */
+.all {
+    background-position: -87px -125px;
+}
+.a12 {
+   
+    background-position: 0px -125px;
+}
+.a15 {
+    background-position: -29px -125px;
+}
+.a19 {
+    background-position: -58px -125px;
+}
+
+.chart_btn a {
+    display: inline-block;
+    background: #f2f2f2;
+    font-size: 1.2em;
+    padding: 15px 30px;
+}
+
+/* 전체메뉴 버튼 */
+.menu_btn a {
+    font-size: 13px;
+    padding: 5px 10px;
+    display: inline-block;
+    border: 1px solid #fff;
+    transition: all .3s;
+}
+.menu_btn a:hover {
+    background: #fff;
+    color: black;
+}
+
+
+/* 공통요소 */
+   .button a{
+    min-width: 80px;
+    padding: 7px 30px;
+    display: inline-block; 
+    text-align: center;
+    font-weight: bold;
+   }
+   .button_w a{
+       background-color: #fff;
+       color: #3a0e6a;
+       border: 1px solid #fff;
+   }
+   
+   .button_p a{
+    background-color: #3a0e6a;
+    color: #fff;
+    border: 1px solid #3a0e6a;
+   }
+
+   
+   /* 라인 */
+.line::after {
+    position: absolute;
+    right: -13px; top: 6px;
+    content: '';
+    width: 1px; height: 14px;
+    background: #fff;
+}
+
+
+
+
