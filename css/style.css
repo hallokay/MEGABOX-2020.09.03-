@@ -236,13 +236,15 @@ header {
     color: #666;
 }
 
+.movie_chart {
+    overflow: hidden;
+}
 .chart {
     display: flex;
     margin-bottom: 30px;
  }
 .card_grid {
     position: relative;
-    margin: 0 .5em;
 }
 .movie_poster img {
     display: block;
@@ -316,10 +318,11 @@ header {
 }
 
 .chart_btn a {
-    display: inline-block;
+    display: inline-flex;
     background: #f2f2f2;
     font-size: 1.2em;
     padding: 15px 30px;
+    box-sizing: border-box;
 }
 
 /* 전체메뉴 버튼 */
